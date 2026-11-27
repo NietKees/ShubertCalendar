@@ -36,7 +36,24 @@
     .event { overflow: hidden; margin-top: .22rem; padding: .22rem .3rem; border-left: 3px solid var(--event-color, var(--accent)); border-radius: .2rem; background: color-mix(in srgb, var(--event-color, var(--accent)) 12%, white); color: #0f172a; font-size: .68rem; line-height: 1.25; text-overflow: ellipsis; }
     .event-title { display: block; overflow: hidden; font-weight: 750; text-overflow: ellipsis; white-space: nowrap; }
     .event-meta { display: block; overflow: hidden; color: #475569; font-size: .62rem; text-overflow: ellipsis; white-space: nowrap; }
-    .more-events { padding: .15rem .25rem; color: #1d4ed8; font-size: .64rem; font-weight: 750; }
+    .more-events { width: 100%; margin-top: .18rem; padding: .18rem .25rem; color: #1d4ed8; text-align: left; font-size: .68rem; font-weight: 750; }
+    .more-events:hover { background: #eff6ff; }
+    .day-events-dialog { width: min(34rem, calc(100vw - 2rem)); max-height: min(80vh, 48rem); padding: 0; border: 0; border-radius: .75rem; color: inherit; box-shadow: 0 20px 50px #0f172a40; }
+    .day-events-dialog::backdrop { background: #0f172a80; }
+    .day-events-header { position: sticky; top: 0; display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: 1rem 1.1rem; background: white; border-bottom: 1px solid var(--line); }
+    .day-events-header h2 { margin: 0; font-size: 1rem; }
+    .day-events-list { display: grid; gap: .55rem; padding: .8rem 1rem 1rem; }
+    .day-events-list .event { margin: 0; padding: .65rem .75rem; font-size: .85rem; }
+    .day-events-list .event-title { white-space: normal; }
+    .day-events-list .event-meta { margin-top: .15rem; font-size: .75rem; }
+    .password-dialog { width: min(28rem, calc(100vw - 2rem)); padding: 1.25rem; border: 0; border-radius: .75rem; color: inherit; box-shadow: 0 20px 50px #0f172a40; }
+    .password-dialog::backdrop { background: #0f172a99; }
+    .password-dialog h2 { margin: 0 0 .5rem; font-size: 1.1rem; }
+    .password-dialog p { color: var(--muted); font-size: .85rem; line-height: 1.5; }
+    .password-dialog label { display: block; margin: 1rem 0 .35rem; font-size: .8rem; font-weight: 700; }
+    .password-dialog input { width: 100%; padding: .7rem; border: 1px solid var(--line); border-radius: .4rem; font: inherit; }
+    .password-dialog button[type="submit"] { margin-top: .75rem; background: var(--accent); color: white; }
+    #password-error { color: #b91c1c; }
     .week-wrap { min-width: 780px; }
     .week-header, .week-body { display: grid; grid-template-columns: 64px repeat(7, minmax(0, 1fr)); }
     .week-header { position: sticky; top: 0; z-index: 3; background: white; border-bottom: 1px solid var(--line); box-shadow: 0 1px 3px #0f172a0d; }
@@ -91,12 +108,36 @@
     <p id="status" role="status">Loading schedule…</p>
     <div class="calendar-scroll"><div id="calendar"></div></div>
   </main>
+  <dialog id="day-events-dialog" class="day-events-dialog" aria-labelledby="day-events-title">
+    <div class="day-events-header">
+      <h2 id="day-events-title"></h2>
+      <button id="close-day-events" type="button" aria-label="Close day events">Close</button>
+    </div>
+    <div id="day-events-list" class="day-events-list"></div>
+  </dialog>
+  <dialog id="schedule-password-dialog" class="password-dialog" aria-labelledby="schedule-password-title">
+    <h2 id="schedule-password-title">Private schedule</h2>
+    <p>Enter the shared password provided by the schedule owner to decrypt and view this calendar.</p>
+    <form id="schedule-password-form">
+      <label for="schedule-password">Shared password</label>
+      <input id="schedule-password" type="password" autocomplete="current-password" required autofocus>
+      <p id="password-error" role="alert" hidden></p>
+      <button type="submit">Unlock schedule</button>
+    </form>
+  </dialog>
   <footer>Times are shown as entered for the venue.</footer>
   <script>
     const calendar = document.querySelector('#calendar');
     const periodLabel = document.querySelector('#period');
     const statusLabel = document.querySelector('#status');
     const venueSelect = document.querySelector('#venue-select');
+    const dayEventsDialog = document.querySelector('#day-events-dialog');
+    const dayEventsTitle = document.querySelector('#day-events-title');
+    const dayEventsList = document.querySelector('#day-events-list');
+    const passwordDialog = document.querySelector('#schedule-password-dialog');
+    const passwordForm = document.querySelector('#schedule-password-form');
+    const passwordInput = document.querySelector('#schedule-password');
+    const passwordError = document.querySelector('#password-error');
     const mondayFirst = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
     let events = [];
     let venues = [];
@@ -131,6 +172,76 @@
         meta.textContent = `${event.startTime}–${event.endTime} · ${event.venue}`;
         item.append(title, meta);
         return item;
+    }
+    function showDayEvents(date, matching) {
+      dayEventsTitle.textContent = date.toLocaleDateString(undefined, {
+        weekday: 'long', month: 'long', day: 'numeric', year: 'numeric'
+      });
+      dayEventsList.replaceChildren(...matching.map(renderMonthEvent));
+      dayEventsDialog.showModal();
+    }
+    function decodeBase64(value) {
+      return Uint8Array.from(atob(value), character => character.charCodeAt(0));
+    }
+    function isSupportedEncryptedSchedule(envelope) {
+      return envelope?.format === 'zaalplanner-encrypted-schedule' &&
+        envelope.version === 1 &&
+        envelope.kdf === 'PBKDF2-SHA-256' &&
+        envelope.iterations === 310000 &&
+        envelope.cipher === 'AES-256-GCM' &&
+        typeof envelope.salt === 'string' &&
+        typeof envelope.iv === 'string' &&
+        typeof envelope.ciphertext === 'string';
+    }
+    async function decryptSchedule(envelope, password) {
+      const keyMaterial = await crypto.subtle.importKey(
+        'raw', new TextEncoder().encode(password), 'PBKDF2', false, ['deriveKey']
+      );
+      const key = await crypto.subtle.deriveKey(
+        { name: 'PBKDF2', salt: decodeBase64(envelope.salt), iterations: envelope.iterations, hash: 'SHA-256' },
+        keyMaterial,
+        { name: 'AES-GCM', length: 256 },
+        false,
+        ['decrypt']
+      );
+      const plaintext = await crypto.subtle.decrypt(
+        { name: 'AES-GCM', iv: decodeBase64(envelope.iv), tagLength: 128 },
+        key,
+        decodeBase64(envelope.ciphertext)
+      );
+      const schedule = JSON.parse(new TextDecoder().decode(plaintext));
+      if (schedule?.schemaVersion !== 1 || !Array.isArray(schedule.events) || !Array.isArray(schedule.venues)) {
+        throw new Error('The decrypted schedule has an invalid format.');
+      }
+      return schedule;
+    }
+    function unlockSchedule(envelope) {
+      if (!isSupportedEncryptedSchedule(envelope)) {
+        throw new Error('This schedule is not encrypted with a supported format. Ask the owner to publish it again with password protection.');
+      }
+      return new Promise(resolve => {
+        const submitHandler = async event => {
+          event.preventDefault();
+          passwordError.hidden = true;
+          passwordInput.disabled = true;
+          try {
+            const schedule = await decryptSchedule(envelope, passwordInput.value);
+            passwordDialog.close();
+            passwordForm.removeEventListener('submit', submitHandler);
+            resolve(schedule);
+          } catch {
+            passwordError.textContent = 'Could not decrypt the schedule. Check the password and try again.';
+            passwordError.hidden = false;
+            passwordInput.select();
+          } finally {
+            passwordInput.disabled = false;
+          }
+        };
+        passwordForm.addEventListener('submit', submitHandler);
+        passwordDialog.addEventListener('cancel', event => event.preventDefault());
+        passwordDialog.showModal();
+        passwordInput.focus();
+      });
     }
     function renderMonth() {
       const first = new Date(current.getFullYear(), current.getMonth(), 1);
@@ -169,9 +280,12 @@
         cell.append(number);
         for (const event of matching.slice(0, 3)) cell.append(renderMonthEvent(event));
         if (matching.length > 3) {
-          const more = document.createElement('div');
+          const more = document.createElement('button');
           more.className = 'more-events';
+          more.type = 'button';
           more.textContent = `+${matching.length - 3} more`;
+          more.setAttribute('aria-label', `View all ${matching.length} events on ${date.toLocaleDateString()}`);
+          more.addEventListener('click', () => showDayEvents(date, matching));
           cell.append(more);
         }
         grid.append(cell);
@@ -284,12 +398,17 @@
       document.documentElement.style.setProperty('--accent', selected?.color || '#3b82f6');
       render();
     });
+    document.querySelector('#close-day-events').addEventListener('click', () => dayEventsDialog.close());
+    dayEventsDialog.addEventListener('click', event => {
+      if (event.target === dayEventsDialog) dayEventsDialog.close();
+    });
 
     fetch('./schedule.json', { cache: 'no-store' })
       .then(response => {
         if (!response.ok) throw new Error(`Could not load schedule (${response.status}).`);
         return response.json();
       })
+      .then(unlockSchedule)
       .then(schedule => {
         events = Array.isArray(schedule.events) ? schedule.events : [];
         venues = Array.isArray(schedule.venues) ? schedule.venues : [];
@@ -310,7 +429,7 @@
         render();
       })
       .catch(error => {
-        statusLabel.textContent = `${error.message} The schedule owner may not have published a schedule yet.`;
+        statusLabel.textContent = error.message;
         calendar.replaceChildren();
       });
     render();
