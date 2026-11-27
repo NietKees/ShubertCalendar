@@ -1,0 +1,1000 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-11-27T14:06:34.312Z",
+  "range": {
+    "from": "2026-11-27",
+    "to": "2027-11-27"
+  },
+  "venues": [
+    {
+      "name": "gymzaal",
+      "color": "#FBB02D"
+    },
+    {
+      "name": "Recreatiezaal",
+      "color": "#EF4444"
+    },
+    {
+      "name": "Vergaderkamer",
+      "color": "#0284C7"
+    }
+  ],
+  "events": [
+    {
+      "date": "2026-11-27",
+      "title": "676",
+      "venue": "gymzaal",
+      "color": "#FBB02D",
+      "startTime": "06:00",
+      "endTime": "07:00"
+    },
+    {
+      "date": "2026-11-27",
+      "title": "Toernooi",
+      "venue": "gymzaal",
+      "color": "#FBB02D",
+      "startTime": "08:00",
+      "endTime": "13:00"
+    },
+    {
+      "date": "2026-11-27",
+      "title": "Bridge",
+      "venue": "gymzaal",
+      "color": "#FBB02D",
+      "startTime": "13:00",
+      "endTime": "14:00"
+    },
+    {
+      "date": "2026-11-27",
+      "title": "Belangrijk",
+      "venue": "gymzaal",
+      "color": "#FBB02D",
+      "startTime": "14:00",
+      "endTime": "15:00"
+    },
+    {
+      "date": "2026-11-27",
+      "title": "Koor",
+      "venue": "gymzaal",
+      "color": "#FBB02D",
+      "startTime": "16:00",
+      "endTime": "18:00"
+    },
+    {
+      "date": "2026-11-27",
+      "title": "gasdg",
+      "venue": "gymzaal",
+      "color": "#FBB02D",
+      "startTime": "18:00",
+      "endTime": "19:00"
+    },
+    {
+      "date": "2026-11-27",
+      "title": "asdfa",
+      "venue": "gymzaal",
+      "color": "#FBB02D",
+      "startTime": "23:00",
+      "endTime": "23:55"
+    },
+    {
+      "date": "2026-12-01",
+      "title": "geag",
+      "venue": "gymzaal",
+      "color": "#FBB02D",
+      "startTime": "07:08",
+      "endTime": "08:00"
+    },
+    {
+      "date": "2026-12-02",
+      "title": "adsf",
+      "venue": "gymzaal",
+      "color": "#FBB02D",
+      "startTime": "13:00",
+      "endTime": "15:00"
+    },
+    {
+      "date": "2026-12-03",
+      "title": "Iets",
+      "venue": "gymzaal",
+      "color": "#FBB02D",
+      "startTime": "13:00",
+      "endTime": "14:00"
+    },
+    {
+      "date": "2026-12-04",
+      "title": "676",
+      "venue": "gymzaal",
+      "color": "#FBB02D",
+      "startTime": "06:00",
+      "endTime": "07:00"
+    },
+    {
+      "date": "2026-12-04",
+      "title": "Toernooi",
+      "venue": "gymzaal",
+      "color": "#FBB02D",
+      "startTime": "08:00",
+      "endTime": "13:00"
+    },
+    {
+      "date": "2026-12-04",
+      "title": "Bridge",
+      "venue": "gymzaal",
+      "color": "#FBB02D",
+      "startTime": "13:00",
+      "endTime": "14:00"
+    },
+    {
+      "date": "2026-12-04",
+      "title": "Belangrijk",
+      "venue": "gymzaal",
+      "color": "#FBB02D",
+      "startTime": "14:00",
+      "endTime": "15:00"
+    },
+    {
+      "date": "2026-12-04",
+      "title": "Koor",
+      "venue": "gymzaal",
+      "color": "#FBB02D",
+      "startTime": "16:00",
+      "endTime": "18:00"
+    },
+    {
+      "date": "2026-12-04",
+      "title": "gasdg",
+      "venue": "gymzaal",
+      "color": "#FBB02D",
+      "startTime": "18:00",
+      "endTime": "19:00"
+    },
+    {
+      "date": "2026-12-04",
+      "title": "asdfa",
+      "venue": "gymzaal",
+      "color": "#FBB02D",
+      "startTime": "23:00",
+      "endTime": "23:55"
+    },
+    {
+      "date": "2026-12-09",
+      "title": "adsf",
+      "venue": "gymzaal",
+      "color": "#FBB02D",
+      "startTime": "13:00",
+      "endTime": "15:00"
+    },
+    {
+      "date": "2026-12-10",
+      "title": "Iets",
+      "venue": "gymzaal",
+      "color": "#FBB02D",
+      "startTime": "13:00",
+      "endTime": "14:00"
+    },
+    {
+      "date": "2026-12-11",
+      "title": "Toernooi",
+      "venue": "gymzaal",
+      "color": "#FBB02D",
+      "startTime": "08:00",
+      "endTime": "13:00"
+    },
+    {
+      "date": "2026-12-16",
+      "title": "adsf",
+      "venue": "gymzaal",
+      "color": "#FBB02D",
+      "startTime": "13:00",
+      "endTime": "15:00"
+    },
+    {
+      "date": "2026-12-17",
+      "title": "Iets",
+      "venue": "gymzaal",
+      "color": "#FBB02D",
+      "startTime": "13:00",
+      "endTime": "14:00"
+    },
+    {
+      "date": "2026-12-18",
+      "title": "Toernooi",
+      "venue": "gymzaal",
+      "color": "#FBB02D",
+      "startTime": "08:00",
+      "endTime": "13:00"
+    },
+    {
+      "date": "2026-12-24",
+      "title": "Iets",
+      "venue": "gymzaal",
+      "color": "#FBB02D",
+      "startTime": "13:00",
+      "endTime": "14:00"
+    },
+    {
+      "date": "2026-12-25",
+      "title": "Toernooi",
+      "venue": "gymzaal",
+      "color": "#FBB02D",
+      "startTime": "08:00",
+      "endTime": "13:00"
+    },
+    {
+      "date": "2026-12-31",
+      "title": "Iets",
+      "venue": "gymzaal",
+      "color": "#FBB02D",
+      "startTime": "13:00",
+      "endTime": "14:00"
+    },
+    {
+      "date": "2027-01-01",
+      "title": "Toernooi",
+      "venue": "gymzaal",
+      "color": "#FBB02D",
+      "startTime": "08:00",
+      "endTime": "13:00"
+    },
+    {
+      "date": "2027-01-07",
+      "title": "Iets",
+      "venue": "gymzaal",
+      "color": "#FBB02D",
+      "startTime": "13:00",
+      "endTime": "14:00"
+    },
+    {
+      "date": "2027-01-08",
+      "title": "Toernooi",
+      "venue": "gymzaal",
+      "color": "#FBB02D",
+      "startTime": "08:00",
+      "endTime": "13:00"
+    },
+    {
+      "date": "2027-01-14",
+      "title": "Iets",
+      "venue": "gymzaal",
+      "color": "#FBB02D",
+      "startTime": "13:00",
+      "endTime": "14:00"
+    },
+    {
+      "date": "2027-01-15",
+      "title": "Toernooi",
+      "venue": "gymzaal",
+      "color": "#FBB02D",
+      "startTime": "08:00",
+      "endTime": "13:00"
+    },
+    {
+      "date": "2027-01-21",
+      "title": "Iets",
+      "venue": "gymzaal",
+      "color": "#FBB02D",
+      "startTime": "13:00",
+      "endTime": "14:00"
+    },
+    {
+      "date": "2027-01-22",
+      "title": "Toernooi",
+      "venue": "gymzaal",
+      "color": "#FBB02D",
+      "startTime": "08:00",
+      "endTime": "13:00"
+    },
+    {
+      "date": "2027-01-28",
+      "title": "Iets",
+      "venue": "gymzaal",
+      "color": "#FBB02D",
+      "startTime": "13:00",
+      "endTime": "14:00"
+    },
+    {
+      "date": "2027-01-29",
+      "title": "Toernooi",
+      "venue": "gymzaal",
+      "color": "#FBB02D",
+      "startTime": "08:00",
+      "endTime": "13:00"
+    },
+    {
+      "date": "2027-02-04",
+      "title": "Iets",
+      "venue": "gymzaal",
+      "color": "#FBB02D",
+      "startTime": "13:00",
+      "endTime": "14:00"
+    },
+    {
+      "date": "2027-02-05",
+      "title": "Toernooi",
+      "venue": "gymzaal",
+      "color": "#FBB02D",
+      "startTime": "08:00",
+      "endTime": "13:00"
+    },
+    {
+      "date": "2027-02-11",
+      "title": "Iets",
+      "venue": "gymzaal",
+      "color": "#FBB02D",
+      "startTime": "13:00",
+      "endTime": "14:00"
+    },
+    {
+      "date": "2027-02-12",
+      "title": "Toernooi",
+      "venue": "gymzaal",
+      "color": "#FBB02D",
+      "startTime": "08:00",
+      "endTime": "13:00"
+    },
+    {
+      "date": "2027-02-18",
+      "title": "Iets",
+      "venue": "gymzaal",
+      "color": "#FBB02D",
+      "startTime": "13:00",
+      "endTime": "14:00"
+    },
+    {
+      "date": "2027-02-19",
+      "title": "Toernooi",
+      "venue": "gymzaal",
+      "color": "#FBB02D",
+      "startTime": "08:00",
+      "endTime": "13:00"
+    },
+    {
+      "date": "2027-02-25",
+      "title": "Iets",
+      "venue": "gymzaal",
+      "color": "#FBB02D",
+      "startTime": "13:00",
+      "endTime": "14:00"
+    },
+    {
+      "date": "2027-02-26",
+      "title": "Toernooi",
+      "venue": "gymzaal",
+      "color": "#FBB02D",
+      "startTime": "08:00",
+      "endTime": "13:00"
+    },
+    {
+      "date": "2027-03-04",
+      "title": "Iets",
+      "venue": "gymzaal",
+      "color": "#FBB02D",
+      "startTime": "13:00",
+      "endTime": "14:00"
+    },
+    {
+      "date": "2027-03-05",
+      "title": "Toernooi",
+      "venue": "gymzaal",
+      "color": "#FBB02D",
+      "startTime": "08:00",
+      "endTime": "13:00"
+    },
+    {
+      "date": "2027-03-11",
+      "title": "Iets",
+      "venue": "gymzaal",
+      "color": "#FBB02D",
+      "startTime": "13:00",
+      "endTime": "14:00"
+    },
+    {
+      "date": "2027-03-12",
+      "title": "Toernooi",
+      "venue": "gymzaal",
+      "color": "#FBB02D",
+      "startTime": "08:00",
+      "endTime": "13:00"
+    },
+    {
+      "date": "2027-03-18",
+      "title": "Iets",
+      "venue": "gymzaal",
+      "color": "#FBB02D",
+      "startTime": "13:00",
+      "endTime": "14:00"
+    },
+    {
+      "date": "2027-03-19",
+      "title": "Toernooi",
+      "venue": "gymzaal",
+      "color": "#FBB02D",
+      "startTime": "08:00",
+      "endTime": "13:00"
+    },
+    {
+      "date": "2027-03-25",
+      "title": "Iets",
+      "venue": "gymzaal",
+      "color": "#FBB02D",
+      "startTime": "13:00",
+      "endTime": "14:00"
+    },
+    {
+      "date": "2027-03-26",
+      "title": "Toernooi",
+      "venue": "gymzaal",
+      "color": "#FBB02D",
+      "startTime": "08:00",
+      "endTime": "13:00"
+    },
+    {
+      "date": "2027-04-01",
+      "title": "Iets",
+      "venue": "gymzaal",
+      "color": "#FBB02D",
+      "startTime": "13:00",
+      "endTime": "14:00"
+    },
+    {
+      "date": "2027-04-02",
+      "title": "Toernooi",
+      "venue": "gymzaal",
+      "color": "#FBB02D",
+      "startTime": "08:00",
+      "endTime": "13:00"
+    },
+    {
+      "date": "2027-04-08",
+      "title": "Iets",
+      "venue": "gymzaal",
+      "color": "#FBB02D",
+      "startTime": "13:00",
+      "endTime": "14:00"
+    },
+    {
+      "date": "2027-04-09",
+      "title": "Toernooi",
+      "venue": "gymzaal",
+      "color": "#FBB02D",
+      "startTime": "08:00",
+      "endTime": "13:00"
+    },
+    {
+      "date": "2027-04-15",
+      "title": "Iets",
+      "venue": "gymzaal",
+      "color": "#FBB02D",
+      "startTime": "13:00",
+      "endTime": "14:00"
+    },
+    {
+      "date": "2027-04-16",
+      "title": "Toernooi",
+      "venue": "gymzaal",
+      "color": "#FBB02D",
+      "startTime": "08:00",
+      "endTime": "13:00"
+    },
+    {
+      "date": "2027-04-22",
+      "title": "Iets",
+      "venue": "gymzaal",
+      "color": "#FBB02D",
+      "startTime": "13:00",
+      "endTime": "14:00"
+    },
+    {
+      "date": "2027-04-23",
+      "title": "Toernooi",
+      "venue": "gymzaal",
+      "color": "#FBB02D",
+      "startTime": "08:00",
+      "endTime": "13:00"
+    },
+    {
+      "date": "2027-04-29",
+      "title": "Iets",
+      "venue": "gymzaal",
+      "color": "#FBB02D",
+      "startTime": "13:00",
+      "endTime": "14:00"
+    },
+    {
+      "date": "2027-04-30",
+      "title": "Toernooi",
+      "venue": "gymzaal",
+      "color": "#FBB02D",
+      "startTime": "08:00",
+      "endTime": "13:00"
+    },
+    {
+      "date": "2027-05-06",
+      "title": "Iets",
+      "venue": "gymzaal",
+      "color": "#FBB02D",
+      "startTime": "13:00",
+      "endTime": "14:00"
+    },
+    {
+      "date": "2027-05-07",
+      "title": "Toernooi",
+      "venue": "gymzaal",
+      "color": "#FBB02D",
+      "startTime": "08:00",
+      "endTime": "13:00"
+    },
+    {
+      "date": "2027-05-13",
+      "title": "Iets",
+      "venue": "gymzaal",
+      "color": "#FBB02D",
+      "startTime": "13:00",
+      "endTime": "14:00"
+    },
+    {
+      "date": "2027-05-14",
+      "title": "Toernooi",
+      "venue": "gymzaal",
+      "color": "#FBB02D",
+      "startTime": "08:00",
+      "endTime": "13:00"
+    },
+    {
+      "date": "2027-05-20",
+      "title": "Iets",
+      "venue": "gymzaal",
+      "color": "#FBB02D",
+      "startTime": "13:00",
+      "endTime": "14:00"
+    },
+    {
+      "date": "2027-05-21",
+      "title": "Toernooi",
+      "venue": "gymzaal",
+      "color": "#FBB02D",
+      "startTime": "08:00",
+      "endTime": "13:00"
+    },
+    {
+      "date": "2027-05-27",
+      "title": "Iets",
+      "venue": "gymzaal",
+      "color": "#FBB02D",
+      "startTime": "13:00",
+      "endTime": "14:00"
+    },
+    {
+      "date": "2027-05-28",
+      "title": "Toernooi",
+      "venue": "gymzaal",
+      "color": "#FBB02D",
+      "startTime": "08:00",
+      "endTime": "13:00"
+    },
+    {
+      "date": "2027-06-03",
+      "title": "Iets",
+      "venue": "gymzaal",
+      "color": "#FBB02D",
+      "startTime": "13:00",
+      "endTime": "14:00"
+    },
+    {
+      "date": "2027-06-04",
+      "title": "Toernooi",
+      "venue": "gymzaal",
+      "color": "#FBB02D",
+      "startTime": "08:00",
+      "endTime": "13:00"
+    },
+    {
+      "date": "2027-06-10",
+      "title": "Iets",
+      "venue": "gymzaal",
+      "color": "#FBB02D",
+      "startTime": "13:00",
+      "endTime": "14:00"
+    },
+    {
+      "date": "2027-06-11",
+      "title": "Toernooi",
+      "venue": "gymzaal",
+      "color": "#FBB02D",
+      "startTime": "08:00",
+      "endTime": "13:00"
+    },
+    {
+      "date": "2027-06-17",
+      "title": "Iets",
+      "venue": "gymzaal",
+      "color": "#FBB02D",
+      "startTime": "13:00",
+      "endTime": "14:00"
+    },
+    {
+      "date": "2027-06-18",
+      "title": "Toernooi",
+      "venue": "gymzaal",
+      "color": "#FBB02D",
+      "startTime": "08:00",
+      "endTime": "13:00"
+    },
+    {
+      "date": "2027-06-24",
+      "title": "Iets",
+      "venue": "gymzaal",
+      "color": "#FBB02D",
+      "startTime": "13:00",
+      "endTime": "14:00"
+    },
+    {
+      "date": "2027-06-25",
+      "title": "Toernooi",
+      "venue": "gymzaal",
+      "color": "#FBB02D",
+      "startTime": "08:00",
+      "endTime": "13:00"
+    },
+    {
+      "date": "2027-07-01",
+      "title": "Iets",
+      "venue": "gymzaal",
+      "color": "#FBB02D",
+      "startTime": "13:00",
+      "endTime": "14:00"
+    },
+    {
+      "date": "2027-07-02",
+      "title": "Toernooi",
+      "venue": "gymzaal",
+      "color": "#FBB02D",
+      "startTime": "08:00",
+      "endTime": "13:00"
+    },
+    {
+      "date": "2027-07-08",
+      "title": "Iets",
+      "venue": "gymzaal",
+      "color": "#FBB02D",
+      "startTime": "13:00",
+      "endTime": "14:00"
+    },
+    {
+      "date": "2027-07-09",
+      "title": "Toernooi",
+      "venue": "gymzaal",
+      "color": "#FBB02D",
+      "startTime": "08:00",
+      "endTime": "13:00"
+    },
+    {
+      "date": "2027-07-15",
+      "title": "Iets",
+      "venue": "gymzaal",
+      "color": "#FBB02D",
+      "startTime": "13:00",
+      "endTime": "14:00"
+    },
+    {
+      "date": "2027-07-16",
+      "title": "Toernooi",
+      "venue": "gymzaal",
+      "color": "#FBB02D",
+      "startTime": "08:00",
+      "endTime": "13:00"
+    },
+    {
+      "date": "2027-07-22",
+      "title": "Iets",
+      "venue": "gymzaal",
+      "color": "#FBB02D",
+      "startTime": "13:00",
+      "endTime": "14:00"
+    },
+    {
+      "date": "2027-07-23",
+      "title": "Toernooi",
+      "venue": "gymzaal",
+      "color": "#FBB02D",
+      "startTime": "08:00",
+      "endTime": "13:00"
+    },
+    {
+      "date": "2027-07-29",
+      "title": "Iets",
+      "venue": "gymzaal",
+      "color": "#FBB02D",
+      "startTime": "13:00",
+      "endTime": "14:00"
+    },
+    {
+      "date": "2027-07-30",
+      "title": "Toernooi",
+      "venue": "gymzaal",
+      "color": "#FBB02D",
+      "startTime": "08:00",
+      "endTime": "13:00"
+    },
+    {
+      "date": "2027-08-05",
+      "title": "Iets",
+      "venue": "gymzaal",
+      "color": "#FBB02D",
+      "startTime": "13:00",
+      "endTime": "14:00"
+    },
+    {
+      "date": "2027-08-06",
+      "title": "Toernooi",
+      "venue": "gymzaal",
+      "color": "#FBB02D",
+      "startTime": "08:00",
+      "endTime": "13:00"
+    },
+    {
+      "date": "2027-08-12",
+      "title": "Iets",
+      "venue": "gymzaal",
+      "color": "#FBB02D",
+      "startTime": "13:00",
+      "endTime": "14:00"
+    },
+    {
+      "date": "2027-08-13",
+      "title": "Toernooi",
+      "venue": "gymzaal",
+      "color": "#FBB02D",
+      "startTime": "08:00",
+      "endTime": "13:00"
+    },
+    {
+      "date": "2027-08-19",
+      "title": "Iets",
+      "venue": "gymzaal",
+      "color": "#FBB02D",
+      "startTime": "13:00",
+      "endTime": "14:00"
+    },
+    {
+      "date": "2027-08-20",
+      "title": "Toernooi",
+      "venue": "gymzaal",
+      "color": "#FBB02D",
+      "startTime": "08:00",
+      "endTime": "13:00"
+    },
+    {
+      "date": "2027-08-26",
+      "title": "Iets",
+      "venue": "gymzaal",
+      "color": "#FBB02D",
+      "startTime": "13:00",
+      "endTime": "14:00"
+    },
+    {
+      "date": "2027-08-27",
+      "title": "Toernooi",
+      "venue": "gymzaal",
+      "color": "#FBB02D",
+      "startTime": "08:00",
+      "endTime": "13:00"
+    },
+    {
+      "date": "2027-09-02",
+      "title": "Iets",
+      "venue": "gymzaal",
+      "color": "#FBB02D",
+      "startTime": "13:00",
+      "endTime": "14:00"
+    },
+    {
+      "date": "2027-09-03",
+      "title": "Toernooi",
+      "venue": "gymzaal",
+      "color": "#FBB02D",
+      "startTime": "08:00",
+      "endTime": "13:00"
+    },
+    {
+      "date": "2027-09-09",
+      "title": "Iets",
+      "venue": "gymzaal",
+      "color": "#FBB02D",
+      "startTime": "13:00",
+      "endTime": "14:00"
+    },
+    {
+      "date": "2027-09-10",
+      "title": "Toernooi",
+      "venue": "gymzaal",
+      "color": "#FBB02D",
+      "startTime": "08:00",
+      "endTime": "13:00"
+    },
+    {
+      "date": "2027-09-16",
+      "title": "Iets",
+      "venue": "gymzaal",
+      "color": "#FBB02D",
+      "startTime": "13:00",
+      "endTime": "14:00"
+    },
+    {
+      "date": "2027-09-17",
+      "title": "Toernooi",
+      "venue": "gymzaal",
+      "color": "#FBB02D",
+      "startTime": "08:00",
+      "endTime": "13:00"
+    },
+    {
+      "date": "2027-09-23",
+      "title": "Iets",
+      "venue": "gymzaal",
+      "color": "#FBB02D",
+      "startTime": "13:00",
+      "endTime": "14:00"
+    },
+    {
+      "date": "2027-09-24",
+      "title": "Toernooi",
+      "venue": "gymzaal",
+      "color": "#FBB02D",
+      "startTime": "08:00",
+      "endTime": "13:00"
+    },
+    {
+      "date": "2027-09-30",
+      "title": "Iets",
+      "venue": "gymzaal",
+      "color": "#FBB02D",
+      "startTime": "13:00",
+      "endTime": "14:00"
+    },
+    {
+      "date": "2027-10-01",
+      "title": "Toernooi",
+      "venue": "gymzaal",
+      "color": "#FBB02D",
+      "startTime": "08:00",
+      "endTime": "13:00"
+    },
+    {
+      "date": "2027-10-07",
+      "title": "Iets",
+      "venue": "gymzaal",
+      "color": "#FBB02D",
+      "startTime": "13:00",
+      "endTime": "14:00"
+    },
+    {
+      "date": "2027-10-08",
+      "title": "Toernooi",
+      "venue": "gymzaal",
+      "color": "#FBB02D",
+      "startTime": "08:00",
+      "endTime": "13:00"
+    },
+    {
+      "date": "2027-10-14",
+      "title": "Iets",
+      "venue": "gymzaal",
+      "color": "#FBB02D",
+      "startTime": "13:00",
+      "endTime": "14:00"
+    },
+    {
+      "date": "2027-10-15",
+      "title": "Toernooi",
+      "venue": "gymzaal",
+      "color": "#FBB02D",
+      "startTime": "08:00",
+      "endTime": "13:00"
+    },
+    {
+      "date": "2027-10-21",
+      "title": "Iets",
+      "venue": "gymzaal",
+      "color": "#FBB02D",
+      "startTime": "13:00",
+      "endTime": "14:00"
+    },
+    {
+      "date": "2027-10-22",
+      "title": "Toernooi",
+      "venue": "gymzaal",
+      "color": "#FBB02D",
+      "startTime": "08:00",
+      "endTime": "13:00"
+    },
+    {
+      "date": "2027-10-28",
+      "title": "Iets",
+      "venue": "gymzaal",
+      "color": "#FBB02D",
+      "startTime": "13:00",
+      "endTime": "14:00"
+    },
+    {
+      "date": "2027-10-29",
+      "title": "Toernooi",
+      "venue": "gymzaal",
+      "color": "#FBB02D",
+      "startTime": "08:00",
+      "endTime": "13:00"
+    },
+    {
+      "date": "2027-11-04",
+      "title": "Iets",
+      "venue": "gymzaal",
+      "color": "#FBB02D",
+      "startTime": "13:00",
+      "endTime": "14:00"
+    },
+    {
+      "date": "2027-11-05",
+      "title": "Toernooi",
+      "venue": "gymzaal",
+      "color": "#FBB02D",
+      "startTime": "08:00",
+      "endTime": "13:00"
+    },
+    {
+      "date": "2027-11-08",
+      "title": "One time event",
+      "venue": "gymzaal",
+      "color": "#FBB02D",
+      "startTime": "13:00",
+      "endTime": "14:00"
+    },
+    {
+      "date": "2027-11-11",
+      "title": "Iets",
+      "venue": "gymzaal",
+      "color": "#FBB02D",
+      "startTime": "13:00",
+      "endTime": "14:00"
+    },
+    {
+      "date": "2027-11-12",
+      "title": "Toernooi",
+      "venue": "gymzaal",
+      "color": "#FBB02D",
+      "startTime": "08:00",
+      "endTime": "13:00"
+    },
+    {
+      "date": "2027-11-18",
+      "title": "Iets",
+      "venue": "gymzaal",
+      "color": "#FBB02D",
+      "startTime": "13:00",
+      "endTime": "14:00"
+    },
+    {
+      "date": "2027-11-19",
+      "title": "Toernooi",
+      "venue": "gymzaal",
+      "color": "#FBB02D",
+      "startTime": "08:00",
+      "endTime": "13:00"
+    },
+    {
+      "date": "2027-11-25",
+      "title": "Iets",
+      "venue": "gymzaal",
+      "color": "#FBB02D",
+      "startTime": "13:00",
+      "endTime": "14:00"
+    },
+    {
+      "date": "2027-11-26",
+      "title": "Toernooi",
+      "venue": "gymzaal",
+      "color": "#FBB02D",
+      "startTime": "08:00",
+      "endTime": "13:00"
+    }
+  ]
+}
